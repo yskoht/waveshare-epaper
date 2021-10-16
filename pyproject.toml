@@ -4,6 +4,10 @@ version = "0.1.0"
 description = ""
 authors = ["yskoht <ysk.oht@gmail.com>"]
 
+packages = [
+  { include = "epaper" },
+]
+
 [tool.poetry.dependencies]
 python = "^3.8"
 
