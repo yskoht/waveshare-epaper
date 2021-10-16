@@ -8,6 +8,20 @@ packages = [
   { include = "epaper" },
 ]
 
+exclude = [
+  "epaper/e-Paper/.git",
+  "epaper/e-Paper/Arduino",
+  "epaper/e-Paper/STM32",
+  "epaper/e-Paper/*.md",
+  "epaper/e-Paper/*.txt",
+  "epaper/e-Paper/*.png",
+  "epaper/e-Paper/RaspberryPi_JetsonNano/c",
+  "epaper/e-Paper/RaspberryPi_JetsonNano/python/examples",
+  "epaper/e-Paper/RaspberryPi_JetsonNano/python/pic",
+  "epaper/e-Paper/RaspberryPi_JetsonNano/python/*.txt",
+  "epaper/e-Paper/RaspberryPi_JetsonNano/python/*.py",
+]
+
 [tool.poetry.dependencies]
 python = "^3.8"
 
@@ -17,3 +31,4 @@ pytest = "^5.2"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
