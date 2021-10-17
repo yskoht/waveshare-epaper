@@ -3,6 +3,8 @@ on: workflow_dispatch
 jobs:
   publish:
     runs-on: ubuntu-latest
+    env:
+      POETRY_PYPI_TOKEN_PYPI: ${{ secrets.POETRY_PYPI_TOKEN_PYPI }}
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
