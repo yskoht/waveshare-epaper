@@ -1,8 +1,17 @@
 [tool.poetry]
 name = "waveshare-epaper"
 version = "0.6.0"
-description = ""
+description = "Waveshare e-paper package for Python on Raspberry Pi"
 authors = ["yskoht <ysk.oht@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage="https://github.com/yskoht/waveshare-epaper"
+repository="https://github.com/yskoht/waveshare-epaper"
+
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
 
 packages = [
   { include = "epaper" },
