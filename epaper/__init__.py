@@ -1,10 +1,14 @@
+import sys
 from importlib import import_module
-from importlib.metadata import version
+
+if sys.version_info.major > 2:
+  from importlib.metadata import version
 
 
 try:
   __version__ = version('waveshare-epaper')
 except:
+  __version__ = ''
   pass
 
 
