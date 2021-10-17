@@ -21,6 +21,7 @@ pip install waveshare-epaper
 ```python
 import epaper
 
+# For example, when using 7.5inch e-Paper HAT
 epd = epaper.epaper('epd7in5').EPD()
 
 # init and Clear
