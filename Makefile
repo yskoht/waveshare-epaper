@@ -9,6 +9,8 @@ build:
 .PHONY: bump-version
 bump-version:
 	poetry version minor
+	git add pyproject.toml
+	git commit -m 'Bump version'
 
 
 .PHONY: submodule
