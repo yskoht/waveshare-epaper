@@ -1,8 +1,17 @@
-package = []
+[[package]]
+name = "rpi.gpio"
+version = "0.7.0"
+description = "A module to control Raspberry Pi GPIO channels"
+category = "main"
+optional = false
+python-versions = "*"
 
 [metadata]
 lock-version = "1.1"
 python-versions = "*"
-content-hash = "29c1d764c213c1f51fb6bcfa0fe43f351248fae4d4d20a20ade46059d3b7be05"
+content-hash = "3a285a460b94e9cb2cd24f4ca886209e1576411c5b05c516d75d9bb026461363"
 
 [metadata.files]
+"rpi.gpio" = [
+    {file = "RPi.GPIO-0.7.0.tar.gz", hash = "sha256:7424bc6c205466764f30f666c18187a0824077daf20b295c42f08aea2cb87d3f"},
+]
