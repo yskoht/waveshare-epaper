@@ -1,8 +1,13 @@
-import importlib
+from importlib import import_module
+from importlib.metadata import version
 
-__version__ = '0.3.0'
 
-lib = 'epaper.e-Paper.RaspberryPi_JetsonNano.python.lib.waveshare_epd'
+try:
+  __version__ = version('waveshare-epaper')
+except:
+  pass
+
 
 def epaper(model):
-  return importlib.import_module('{}.{}'.format(lib, model))
+  path = 'epaper.e-Paper.RaspberryPi_JetsonNano.python.lib.waveshare_epd'
+  return import_module('{}.{}'.format(path, model))
