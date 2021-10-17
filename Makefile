@@ -18,6 +18,11 @@ submodule:
 	git submodule add https://github.com/waveshare/e-Paper.git epaper/e-Paper
 
 
+.PHONY: clean
+clean:
+	rm -rf ./dist
+
+
 .PHONY: clean-sub
 clean-sub:
 	git -C epaper/e-Paper clean -fd
@@ -31,9 +36,8 @@ initpy:
 
 
 .PHONY: publish
-publish:
-	rm -rf ./dist
-	poetry publish --build
+publish: clean build
+	poetry publish
 
 
 .PHONY: setup
