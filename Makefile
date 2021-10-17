@@ -1,4 +1,4 @@
-PYTHON := python3
+PYTHON := python
 
 
 .PHONY: build
@@ -46,5 +46,3 @@ setup-poetry:
 	if !(type "poetry" > /dev/null 2>&1); then\
 		/bin/bash -c "$$(curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | $(PYTHON) -)";\
 	fi
-
-
