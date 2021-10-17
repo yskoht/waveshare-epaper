@@ -2,7 +2,7 @@ PYTHON := python
 
 
 .PHONY: build
-build:
+build: initpy
 	poetry build
 
 
@@ -31,7 +31,7 @@ initpy:
 
 
 .PHONY: publish
-publish: initpy
+publish:
 	rm -rf ./dist
 	poetry publish --build
 
