@@ -28,7 +28,7 @@ exclude = [
   "epaper/e-Paper/RaspberryPi_JetsonNano/python/examples",
   "epaper/e-Paper/RaspberryPi_JetsonNano/python/pic",
   "epaper/e-Paper/RaspberryPi_JetsonNano/python/*.txt",
-  "epaper/e-Paper/RaspberryPi_JetsonNano/python/*.py",
+  "epaper/e-Paper/RaspberryPi_JetsonNano/python/setup.py",
 ]
 
 [tool.poetry.dependencies]
