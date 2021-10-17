@@ -20,14 +20,13 @@ submodule:
 
 .PHONY: initpy
 initpy:
-	touch epaper/e-Paper/__init__.py
 	touch epaper/e-Paper/RaspberryPi_JetsonNano/__init__.py
 	touch epaper/e-Paper/RaspberryPi_JetsonNano/python/__init__.py
 	touch epaper/e-Paper/RaspberryPi_JetsonNano/python/lib/__init__.py
 
 
 .PHONY: publish
-publish:
+publish: initpy
 	rm -rf ./dist
 	poetry publish --build
 
