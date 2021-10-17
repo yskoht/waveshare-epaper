@@ -23,7 +23,7 @@ exclude = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = "*"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
