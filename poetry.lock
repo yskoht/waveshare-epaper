@@ -6,12 +6,23 @@ category = "main"
 optional = false
 python-versions = "*"
 
+[[package]]
+name = "spidev"
+version = "3.5"
+description = "Python bindings for Linux SPI access through spidev"
+category = "main"
+optional = false
+python-versions = "*"
+
 [metadata]
 lock-version = "1.1"
 python-versions = "*"
-content-hash = "3a285a460b94e9cb2cd24f4ca886209e1576411c5b05c516d75d9bb026461363"
+content-hash = "59c021aa89820e4b3a86b53d049171fd2f965386ae3baf86513b607c77e2654a"
 
 [metadata.files]
 "rpi.gpio" = [
     {file = "RPi.GPIO-0.7.0.tar.gz", hash = "sha256:7424bc6c205466764f30f666c18187a0824077daf20b295c42f08aea2cb87d3f"},
+]
+spidev = [
+    {file = "spidev-3.5.tar.gz", hash = "sha256:8a7f5c289f161ea2ac4697fa8a10918232c990678dd0053084b3c43b1363910d"},
 ]
