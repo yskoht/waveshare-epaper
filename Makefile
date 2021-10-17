@@ -39,10 +39,9 @@ publish:
 .PHONY: setup
 setup:
 	git submodule update --init --recursive
+	poetry install
 
 
 .PHONY: setup-poetry
 setup-poetry:
-	if !(type "poetry" > /dev/null 2>&1); then\
-		/bin/bash -c "$$(curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | $(PYTHON) -)";\
-	fi
+	curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/install-poetry.py | $(PYTHON) -
