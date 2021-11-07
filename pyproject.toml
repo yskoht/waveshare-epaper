@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "waveshare-epaper"
-version = "1.0.3"
+version = "1.1.0"
 description = "Waveshare e-paper package for Python on Raspberry Pi"
 authors = ["yskoht <ysk.oht@gmail.com>"]
 license = "MIT"
