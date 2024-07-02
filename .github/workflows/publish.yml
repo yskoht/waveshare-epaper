@@ -6,10 +6,10 @@ jobs:
     env:
       POETRY_PYPI_TOKEN_PYPI: ${{ secrets.POETRY_PYPI_TOKEN_PYPI }}
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
-          python-version: '3.8'
-      - run: make setup-poetry
+          python-version: "3.8"
+      - uses: snok/install-poetry@v1
       - run: make setup
       - run: make publish
