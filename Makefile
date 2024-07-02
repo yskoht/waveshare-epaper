@@ -44,8 +44,3 @@ publish: clean build
 setup:
 	git submodule update --init --recursive
 	poetry install
-
-
-.PHONY: setup-poetry
-setup-poetry:
-	curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/install-poetry.py | $(PYTHON) -
