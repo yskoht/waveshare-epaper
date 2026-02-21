@@ -20,7 +20,9 @@ packages = [
 exclude = [
   "epaper/e-Paper/.git",
   "epaper/e-Paper/Arduino",
+  "epaper/e-Paper/Arduino_R4",
   "epaper/e-Paper/STM32",
+  "epaper/e-Paper/E-paper_Separate_Program",
   "epaper/e-Paper/*.md",
   "epaper/e-Paper/*.txt",
   "epaper/e-Paper/*.png",
