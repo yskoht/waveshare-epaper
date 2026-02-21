@@ -11,5 +11,5 @@ jobs:
         with:
           python-version: "3.12"
       - uses: snok/install-poetry@v1
-      - run: make setup
+      - run: git submodule update --init --recursive
       - run: make publish
